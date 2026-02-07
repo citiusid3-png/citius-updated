@@ -1,7 +1,7 @@
 import { Calendar, MapPin, Trophy, ArrowDown } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
-import nitkkrLogo from '../data/cititus-logo.png';
-import backGround  from '../data/DSC_9634.jpg';
+import Logo from '../components/Logo';
+import backGround from '../data/DSC_9634.jpg';
 export default function Hero() {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -24,11 +24,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="mb-8 animate-fade-in">
-              <img
-        src={nitkkrLogo}
-        alt="NIT Kurukshetra"
-        className="h-24 w-24 mx-auto mb-6 bg-white rounded-full p-2 shadow-2xl object-contain"
-      />
+          <div className="flex justify-center mb-6">
+            <Logo size="xl" variant="featured" animated />
+          </div>
 
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
             CITIUS

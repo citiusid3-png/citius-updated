@@ -1,5 +1,5 @@
-import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from 'lucide-react';
-import citiusLogo from '../data/cititus-logo.png';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -8,11 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img
-                src={citiusLogo}
-                alt="NIT Kurukshetra"
-                className="h-12 w-12 object-contain bg-white rounded p-1"
-              />
+              <Logo size="md" variant="badge" />
               <div>
                 <h3 className="text-xl font-bold">CITIUS 2025-26</h3>
                 <p className="text-sm text-gray-400">Annual Athletics Meet</p>

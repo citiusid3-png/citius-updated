@@ -47,3 +47,16 @@ body {
 section {
   scroll-margin-top: 80px;
 }
+
+@keyframes logo-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-logo-float {
+  animation: logo-float 3s ease-in-out infinite;
+}

@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import nitkkrLogo from '../data/cititus-logo.png';
+import Logo from './Logo';
 const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
@@ -24,12 +24,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-4">
-            <img
-              src={nitkkrLogo}
-              alt="NIT Kurukshetra"
-              className="h-12 w-12 object-contain"
-            />
+          <div className="flex items-center space-x-3">
+            <Logo size="md" variant="minimal" />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">CITIUS</h1>
               <p className="text-xs text-gray-600">NIT Kurukshetra</p>
