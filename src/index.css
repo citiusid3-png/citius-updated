@@ -60,3 +60,7 @@ section {
 .animate-logo-float {
   animation: logo-float 3s ease-in-out infinite;
 }
+
+.justify {
+  text-align: justify;
+}
